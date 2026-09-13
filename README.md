@@ -1,5 +1,6 @@
 # Mathematics paper skills
 
+English | [日本語](README.ja.md)
 
 This is a public derivative of [Haruhisa Enomoto's math-paper-skills](https://github.com/haruhisa-enomoto/math-paper-skills).
 The original MIT license and attribution are retained. The added workflows are
