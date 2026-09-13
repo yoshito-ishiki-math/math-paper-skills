@@ -58,6 +58,9 @@ Decision: implement | modify | reject | defer
 
 Decision evidence, mandatory for reject or defer:
 
+Applicable author proof-detail decision ID and scope check, if any:
+Concrete new reason for reopening, if any (accepted brevity alone is not one):
+
 Changed locators:
 
 Net prose change, if substantial:

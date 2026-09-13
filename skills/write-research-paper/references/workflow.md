@@ -7,9 +7,10 @@ may add local state, tooling, artifact, and publication requirements.
 
 ## Owner intent, state, and authority
 
-Keep one compact live writing state in the paper workspace. It records current
-positive decisions, the manuscript base revision, valid gates, and the next
-authorized action—not the history of every correction.
+Use the paper's existing compact writing state for sustained work. Create one
+only when the task needs durable coordination. It records current positive
+decisions, the base revision, valid gates, and the next authorized action, not
+the history of every correction. An exact small edit needs no new state file.
 
 Infer a compact task contract from ordinary owner language:
 
@@ -20,10 +21,10 @@ Infer a compact task contract from ordinary owner language:
 - owner-decision boundary; and
 - finish state.
 
-Use read-only project inspection to resolve obvious details. If one material
-axis remains ambiguous, ask one short question about that axis and wait. Do not
-ask the owner to configure the harness, and never silently reduce a broad paper
-task to one local repair.
+Resolve routine details from the conversation and relevant project records.
+Ask only about a material owner choice that cannot be inferred. Wait on the
+dependent action while continuing independent authorized work. Do not require
+the owner to configure the harness or reduce a broad task to one local repair.
 
 `Edit authority` is exact:
 
@@ -42,34 +43,77 @@ uncertain about the wording, recover the referenced text when available. If it
 cannot be recovered, preserve the substantive direction but label new wording
 as a proposal; do not silently literalize the paraphrase or invent a label.
 
-## Route the task
+## Durable proof-detail choices
 
-Use the owner request, not the easiest defect found, to select a route:
+Use [author proof-detail decisions](owner-proof-decisions.md) to record and
+reuse the owner's intentional omissions and deliberately concise proofs.
+Keep the registry durable and separate from temporary writing state. Check it
+before expanding a proof, preparing a reviewer packet, or adjudicating a
+finding about missing detail. A valid matching approval can close that repeated
+request without asking again; a genuinely new concern needs a precise reason.
+
+## Select one mode
+
+### Lightweight writing and review — default
+
+Use lightweight mode unless the owner explicitly requests heavyweight mode or
+subagent delegation. Use the owner request, not the easiest defect found, to
+select a direct route:
 
 ```text
-whole paper: freeze/continuous read -> objective repairs -> editorial read -> adjudicate/revise -> regress -> validate/finish
-named section: cumulative read through section -> scoped revise -> regress -> validate/finish
-exact local edit: revise -> delta regression -> validate/finish
-new paper: shape -> draft/integrate -> continuous read -> objective repairs -> editorial read -> adjudicate/revise -> regress -> validate/finish
-new section: shape if needed -> draft/integrate -> continuous read -> editorial read if promise/architecture/budget changes -> adjudicate/revise -> regress -> validate/finish
+whole paper: inspect/recover contract -> direct revise -> writer regression -> validate/finish
+named section: read cumulative context -> scoped revise -> writer regression -> validate/finish
+exact local edit: revise -> focused writer regression -> validate/finish
+new paper: shape -> draft/integrate -> writer regression -> validate/finish
+new section: shape if needed -> draft/integrate -> writer regression -> validate/finish
 ```
 
-An unqualified request to revise a paper means the whole-paper route and
-requires a new continuous read before editing. Do not substitute an existing
-review unless the owner explicitly requests it. For a named-section task, the
-reader receives the cumulative prefix through that section, while edit
-authority remains confined to the section. A needed change outside that scope
-requires one short expansion request.
+These routes are deliberately single-agent. Do not spawn an independent reader
+for routine revision, ordinary drafting, or every exposition edit. An
+unqualified request to revise a paper means the direct whole-paper route. For a
+named-section task, read enough cumulative context to understand its role while
+keeping edit authority confined to the section. A needed change outside that
+scope requires one short expansion request.
 
-A precise local correction may enter at `revise`, but it may not skip fresh
-delta regression. Adding a section authorizes only the new section and the
-minimal introduction, transition, cross-reference, and later-summary changes
-needed to integrate it. Reopen shape before a new paper or any addition that
-materially changes audience, promise, result package, architecture, or budget.
+A precise local correction may enter at `revise`. Adding a section authorizes
+only the new section and the minimal introduction, transition,
+cross-reference, and later-summary changes needed to integrate it. Reopen shape
+before a new paper or any addition that materially changes audience, promise,
+result package, architecture, or budget.
+
+Never escalate automatically. Spawn an isolated reviewer only when the owner
+explicitly asks to use a subagent, another agent, or an isolated reviewer for
+the current task. A request to review, revise, check submission readiness, or
+read cold is not delegation authorization by itself. Neither a nearly final
+paper, a changed promise or architecture, nor an unresolved exposition risk
+creates authorization.
+
+Without explicit delegation, complete the direct route and label any review as
+writer-side or single-context. You may recommend independent review as a later
+option without blocking completion.
+
+### Heavyweight writing and independent review — explicit only
+
+Enter heavyweight mode only after the owner explicitly names heavyweight
+review, subagent delegation, another agent, or an isolated reviewer. Its route
+is:
+
+```text
+shape/inspect -> draft or revise -> freeze -> one selected independent review -> adjudicate/repair -> authorized regression -> validate/finish
+```
+
+Select the one review mode that answers the live question. Continuous mode
+tests first encounter; editorial mode tests necessity and referential
+precision; delta mode tests bounded repair closure. One authorization permits
+one reviewer run unless the owner explicitly requests comparison or an
+iterative cycle. Do not replace an invalid or failed reviewer automatically.
+
+## Shared writing method
 
 ### Shape calibration
 
-Before full drafting, present one owner decision bundle containing:
+For a new paper or a material change to its audience, promise, or architecture,
+resolve the following choices together, reusing existing owner decisions:
 
 - audience and assumed background;
 - one-sentence paper promise;
@@ -83,9 +127,9 @@ Record approved choices positively with locators or exemplars. Reopen shape
 only after a material change to audience, promise, result package,
 architecture, or budget. Title wording may remain provisional.
 
-The default workflow has two planned owner batches: this calibration and the
-post-review adjudication batch. Ask between them only for a genuinely blocking
-owner choice, not routine section approval.
+Do not schedule approval rounds merely to follow a template. Present a
+calibration or adjudication question only when an unresolved owner choice
+blocks the authorized work; existing decisions remain effective.
 
 ### Draft and integrate
 
@@ -121,12 +165,24 @@ understandable purpose does not by itself earn space, and a reader's ability to
 guess which theorem or assertion was intended does not make the wording
 precise.
 
+## Heavyweight mode: independent review
+
+The remainder of this section does not apply to lightweight mode.
+
 ### Freeze and review
 
+Apply this section only after the owner explicitly authorizes subagent
+delegation for the current review.
 Freeze one revision. The host must give `read-research-paper` a fresh,
 read-only context without drafting history, expected findings, or later
 manuscript text. One stable reader must handle a continuous review; use
-another fresh reader for delta regression. Do not default to a swarm.
+one reader for the selected gate. Do not default to a swarm.
+
+The neutral proof-detail contract allowed by
+[the decision policy](owner-proof-decisions.md) is part of the audience and
+detail boundary, not drafting history. Freeze it before launch. Withhold the
+full registry; disclose only entries for issued text, as specified in that
+policy. Never add contracts in reaction to review findings.
 
 Use a two-step launch: first give the fresh reader only the governing guides
 and task direction and wait for its readiness confirmation; then reveal the
@@ -138,14 +194,13 @@ the review as invalid rather than weakening the label.
 
 ### Run the skeptical editorial pass
 
-After the continuous report, apply only clear local/objective repairs needed to
-produce a coherent integrated candidate; defer owner-judgment findings. For a
-new paper or whole-manuscript revision, freeze that candidate and run a fresh
-agent in `editorial` mode under the reader skill's
+Use this pass only when the owner explicitly delegates an editorial reviewer,
+not automatically after a continuous report, whole-manuscript revision, or
+nearly final integrated candidate. Run one fresh agent in `editorial` mode
+under the reader skill's
 [skeptical-editor protocol](../../read-research-paper/references/skeptical-editor-review.md).
-Also run the pass for a substantial addition that changes the promise, architecture, or
-length and detail budget, and whenever the owner specifically requests a
-necessity, compression, or referential-precision audit.
+It is especially appropriate when the owner requests a necessity, compression,
+or referential-precision audit.
 
 The editor receives the complete reading-order manuscript with a reproducible
 content hash, audience, promise, detail budget, and protected content, but no
@@ -160,16 +215,17 @@ finding must identify the intended exact referent or predicate and the
 inference or ambiguity imposed by the current wording; a necessary passage may
 require `rename` or `replace` rather than deletion or compression.
 
-Continuous and editorial reports form one review cycle. Adjudicate their
-owner-judgment findings together. Accepted clean deletions, compressions,
-renamings, and local precision replacements need ordinary final regression,
-not another editorial pass.
-Substantial replacement prose, new remarks, or new qualifications invalidate
-the editorial gate and require another fresh editorial review.
+If both continuous and editorial review were separately justified or explicitly
+requested, adjudicate their owner-judgment findings together. Accepted clean
+deletions, compressions, renamings, and local precision replacements ordinarily
+need writer-side regression, not another editorial pass. Commission another
+fresh editorial review only after explicit authorization for that additional
+run.
 
 ### Adjudicate and revise
 
-Read the complete review before editing. Convert observations into clusters by
+When an independent review was run, read the complete review before editing.
+Convert observations into clusters by
 common cause. Each cluster records an exact stumble, success test, minimal
 repair, explicit non-scope, risk class, decision, changed locators, and
 regression result.
@@ -229,6 +285,13 @@ Use the four decisions literally.
   audience/owner contract showing that the reported burden is not a defect;
 - `defer`: leave the finding open for owner judgment or missing evidence.
 
+An applicable explicit proof-detail decision is an owner contract for the
+`reject` disposition of a repeated expansion request. Cite its ID, approved
+scope, and applicability check. Preserve the reading observation without
+making the accepted omission an unresolved defect. Reopening requires the
+concrete new reason specified in the decision policy, not a preference for
+more detail.
+
 Disagreement with proposed wording is not rejection of the observed burden.
 An objective finding cannot remain deferred in a completed writing task. An
 owner-judgment finding may remain open only if the task is reported unfinished
@@ -252,6 +315,8 @@ deciding to retain it. For an editorial precision finding, record the intended
 exact referent or predicate, what the current wording licenses, and the
 reconstruction imposed on the reader before deciding to keep, rename, or
 replace it.
+
+## Validate and finish either mode
 
 ### Adjudicate host-project diagnostics
 
@@ -280,8 +345,15 @@ readers.
 
 ### Regress, validate, and finish
 
-A fresh delta reader checks changed regions, surrounding context, and recorded
-success tests without seeing diagnoses or preferred repairs.
+For an ordinary direct route, check changed regions and their affected
+context, references, terminology, notation, and promised scope. Run compilation
+and host checks applicable to the change. Batch independent checks; repeat
+affected checks only after a further edit, failure, or unresolved concern.
+This proportional writer regression is the default completion invariant.
+
+Use a fresh delta reader only when the owner explicitly delegates that
+additional independent run. It checks changed regions, surrounding context,
+and recorded success tests without seeing diagnoses or preferred repairs.
 
 The regression packet names the exact implemented or modified cluster
 identifiers it covers. Compare that set with the revision batch before launch
@@ -290,39 +362,34 @@ and their supplied dependencies. It cannot close a rejected or deferred
 finding, an omitted cluster, or unchanged prose outside the packet, and it does
 not relabel an earlier failed whole-paper verdict.
 
-Independent regression is a completion invariant for every exposition edit,
-including a local objective or writer-found repair. Freeze the changed revision
-and run delta regression unless the change invalidates the continuous review,
-in which case run a new continuous review. Do not report the revision complete
-or create its finished project checkpoint before the required gate passes. A
-pre-edit review cannot certify the repair. Only an explicit owner
-waiver for the named edit may bypass this gate; record and report the waiver.
-If a suitable fresh reader is unavailable, leave the revision unfinished and
-report `revision drafted; independent regression pending`.
+Independent regression is not required for every exposition edit and is never
+spawned automatically. Run it only after the owner explicitly authorizes that
+reviewer run. Otherwise complete the manuscript revision under direct
+validation and do not mislabel writer-side checking as independent evidence.
 
 - Any further edit to a checked region or its dependency invalidates its delta
   result.
 - A changed promise, structural front matter, section order, or reading path
-  invalidates the continuous review and requires a new full run.
+  invalidates the continuous review. A new full run still requires explicit
+  delegation authority.
 - Unchanged local prose outside those dependencies does not require a full run.
 - If the abstract or introduction grows in consecutive rounds, the repairs are
   the wrong kind and the review will not terminate; correct that before
-  commissioning another reader.
+  asking the owner whether to commission another reader.
 
-A completed writing task is tied to one exact revision. Require current shape
-locks; a coverage row for every source finding; no duplicate or orphan source
-identifier; no unresolved objective finding; no `defer` decision unless the
-owner explicitly excluded it; all implemented or modified clusters applied;
-and the appropriate continuous, editorial, regression, compilation, artifact,
-and host-project gates. Preserve each independent report's literal verdict in
-state and record the current revision's closure evidence separately. A source
-`FAIL` never becomes a source `PASS`; an appropriate delta may close all of its
-bounded repair clusters, while an edit that invalidates the whole-paper gate
-requires a new whole-paper review. If regression fails, repair
-and run another fresh regression reader until it passes or owner input is
-needed. If no repair is accepted, do not manufacture an edit or empty
-checkpoint. Keep ordinary reader and editor reports in the host project's
-temporary review area unless their preservation was authorized.
+A completed writing task is tied to one exact revision. For a direct route,
+require current owner locks, completed requested edits, proportional writer
+regression, compilation, artifact inspection, and host-project gates. When an
+independent review was run, additionally require complete adjudication of its
+in-scope findings and preserve its literal verdict. A source `FAIL` never
+becomes a source `PASS` through writer-side repair.
+
+If an independent regression fails, repair directly and commission one more
+review only after explicit owner authorization. Otherwise report the unresolved
+gate instead of entering an automatic reviewer loop. If no repair is
+accepted, do not manufacture an edit or empty checkpoint. Keep reader and
+editor reports in the host project's temporary review area unless their
+preservation was authorized.
 
 Do not prepare submission packages, declare a release, or perform external
 publication actions unless the owner separately requests them. Compilation,

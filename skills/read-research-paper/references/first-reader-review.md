@@ -22,7 +22,10 @@ The writing standards the review applies are in the
 before receiving any manuscript text, the reader reads that guide completely
 and applies it throughout the review.
 
-## When to run one
+## When this mode is useful
+
+These are selection criteria for an explicitly delegated review, not triggers
+for automatic reviewer creation or another run.
 
 - Before submission, once the mathematics is settled.
 - After a substantial rewrite, to test whether the rewrite worked.
@@ -379,3 +382,13 @@ and should say so explicitly when synthesizing. It must not erase a recorded
 inference, rereading, backward search, or translation burden merely because an
 expert can recover the intended meaning. The stumble is data; the diagnosis
 and prescription are judgments.
+
+## Approved proof-detail contract
+
+Apply the shared
+[author proof-detail policy](../../write-research-paper/references/owner-proof-decisions.md).
+The explicitly issued neutral contract is permitted audience/detail context;
+the underlying decision registry remains withheld. Continuous review reveals
+only entries for already issued text. Treat applicable omissions as accepted
+brevity rather than repeating a demand for expansion. Preserve observations
+and report any distinct new issue with the decision ID and exact reason.

@@ -1,148 +1,67 @@
 ---
 name: read-research-paper
-description: Run an independent exposition review of a frozen mathematics manuscript as a forward-blind continuous first reader, a whole-paper skeptical editor, or a bounded delta-regression reader. Use to collect first-pass readability, whole-paper necessity and referential-precision, or repair-regression evidence without editing; do not use to summarize a paper, verify proofs, assess novelty, adjudicate repairs, or review an unstable draft.
+description: Independently review a frozen mathematics manuscript in an explicitly delegated reviewer context. Use for continuous first-reader, editorial, or bounded delta review, not proof verification, manuscript editing, or ordinary writer-side review.
 ---
 
-# Read a research paper
+# Independent exposition review
 
-Act only as an independent exposition reviewer in the assigned mode. Report
-first-encounter reading evidence, whole-paper editorial necessity and
-referential precision, or bounded regression evidence as appropriate. Never
-edit or adjudicate the manuscript.
+Review the frozen manuscript in the assigned mode and report reading evidence.
+The writer owns adjudication and edits. Selecting this skill does not authorize
+creating a reviewer; the owner must explicitly delegate the run. The reviewer
+does not spawn additional agents.
 
-## Validate the run before reading
+## Validate the context
 
-Require an explicit mode: `continuous`, `editorial`, or `delta`.
+Require an explicit `continuous`, `editorial`, or `delta` mode, a fresh context,
+a frozen manuscript revision, allowed inputs, assumed background, report
+destination, and read-only access to the manuscript. Editorial review also
+requires a reproducible reading-copy hash. If an isolation requirement fails,
+report the run invalid; do not simulate freshness.
 
-Confirm all of the following:
+Before reading, load the complete shared
+[paper-writing guide](../write-research-paper/references/paper-writing.md) and
+[author profile](../write-research-paper/references/author-style.md), then the
+selected mode's protocol below. These define review criteria, not writer state.
 
-- this is a fresh context without the writer's conversation or diagnoses;
-- the manuscript packet is frozen and identifies its revision; editorial mode
-  also identifies a reading-copy content hash;
-- the allowed text, assumed background, report destination, and withheld
-  material are explicit; and
-- the execution surface cannot modify the manuscript.
+Withhold writer workflow and conversation, private owner-decision records,
+research notes and ledgers, earlier reviews, drafting/version-control history,
+expected findings, and overlays containing writer-only state. Under the shared
+[proof-detail policy](../write-research-paper/references/owner-proof-decisions.md),
+a neutral contract explicitly issued with allowed text is a narrow exception:
+respect approved omissions and brief arguments without reading their private
+registry. Preserve actual reading observations, but require a concrete new
+issue beyond the approval before repeating an expansion request.
 
-Read the paired writer skill's
-[mathematical paper-writing guide](../write-research-paper/references/paper-writing.md)
-in full, then the mode-specific reference named below. Resolve these links
-relative to this skill directory. Do **not** read the writer workflow, owner
-decision state, research ledgers or notes, earlier reviews, drafting history,
-version-control history, evaluation fixtures, or any host-project paper-writing
-overlay that contains writer-only state. If this context has already seen
-those materials, stop and ask the supervisor for a fresh isolated reader. Do
-not simulate freshness.
+## Read only the selected protocol
 
-## Continuous mode
+| Mode | Input and purpose | Protocol |
+|---|---|---|
+| `continuous` | Cumulative segments, one stable reader, no later text; first-encounter exposition | [Continuous first reader](references/first-reader-review.md) |
+| `editorial` | Complete frozen paper; necessity and referential precision | [Skeptical editor](references/skeptical-editor-review.md) |
+| `delta` | Named repair clusters, changed regions and sufficient context; bounded regression | [Delta regression](references/delta-review.md) |
 
-Follow the [continuous first-reader protocol](references/first-reader-review.md)
-and the supervisor's frozen direction.
+Continuous and editorial review initialize with guides and direction only.
+Confirm readiness before receiving a manuscript path or text in a second
+message. Editorial readers verify the supplied reading-copy hash before
+reading. Continuous readers receive only issued cumulative text and neutral
+contract entries for already visible locators; later text, later contracts,
+compiled output, and the supervisor's segment map remain unavailable.
 
-Complete the governing guides and task direction before receiving any
-manuscript segment. Confirm readiness to the supervisor, then accept the first
-cumulative segment. If the initialization message exposes a segment path or
-manuscript text, stop and mark the run invalid rather than trying to serialize
-the two tasks yourself.
+For a requested challenging audit or a concrete quantifier/dependency ambiguity,
+apply the shared [audit emphasis](../write-research-paper/references/challenging-exposition-audit.md)
+within the assigned mode and allowed inputs. It does not authorize proof
+verification, later-text access, or another reviewer.
 
-- Keep one reader identity for the whole manuscript.
-- Receive only cumulative segments in document order. Journal the newly issued
-  range while retaining earlier text for continuity.
-- Never inspect later text, the complete source, compiled output, literature,
-  launcher state, expected findings, or prior reports.
-- Record each stumble where it occurs, including the inference or rereading
-  required. Preserve earlier entries when later text resolves them.
-- Report concrete first-encounter reconstruction burden, evidence-status
-  confusion, or purpose, placement, and order friction. Test each sentence in
-  its paragraph and each paragraph in the document path. Do not manufacture a
-  defect from a lexical or content category alone; explain what the intended
-  reader cannot recover and why it matters at that point.
-- Do not convert absence of a stumble into a keep/delete judgment. A clear
-  passage may still fail the separate whole-paper necessity or
-  referential-precision audit.
-- Stop at the issued boundary and wait for the same process-only supervisor.
+## Report the evidence and its limits
 
-If the host cannot resume the same isolated reader across segments, mark the
-run invalid; fresh section readers are not a continuous forward-blind review.
-After the final segment, synthesize the immutable journal using the continuous
-protocol. Keep observed reading evidence separate from repair suggestions.
+Use the selected protocol's report and literal verdict format. Identify the
+mode, exact revision, material actually read, isolation conditions, completion
+state, and any applicable proof-detail contract IDs. Give precise locations and
+a concrete reader burden, ambiguity, or marginal reader value for findings;
+word categories and flag counts do not establish defects. Distinguish an
+observation from its diagnosis and proposed repair.
 
-## Editorial mode
-
-Use editorial mode only on a nearly final complete manuscript. Follow the
-[skeptical-editor protocol](references/skeptical-editor-review.md) and the
-supervisor's frozen direction.
-
-Complete the governing guides and task direction before receiving manuscript
-text. Confirm readiness, then accept the complete frozen reading-order
-manuscript in a second message. If initialization exposes the manuscript path
-or text, stop and mark the run invalid.
-
-Before reading, recompute the supplied file's content hash by the method named
-in the direction and compare it with the recorded reading-copy identity. Do not
-substitute a statement that the packet appears consistent. A mismatch makes
-the run invalid.
-
-- Read the complete paper once to recover its promise, result hierarchy,
-  section jobs, intended audience, and detail budget.
-- Read it again under two coupled audits: identify the exact reader-visible
-  loss, if any, caused by deleting a passage, and test whether every retained
-  substantive statement or result pointer gives an exact subject, predicate,
-  status, and referent without requiring guesswork.
-- Audit every explicit remark, negative or defensive scope qualification,
-  recurring informal alias, phrase presented as a named theorem, criterion,
-  principle, method, or argument, and wording that hides an exact mathematical
-  predicate or result behind a descriptive phrase, citation, or loose pointer.
-- Distinguish `clear` from `worth retaining`. Truth, relevance, and a
-  reconstructible purpose do not by themselves establish reader benefit.
-- Distinguish `understandable` from `referentially precise`. A reader's ability
-  to guess the intended theorem or predicate does not validate the wording; a
-  necessary passage may merit `rename` or `replace` rather than compression or
-  deletion.
-- Do not optimize raw word count, rewrite passages, or remove necessary
-  mathematical context. Explain the marginal reader value before assigning an
-  editorial category, and explain the exact ambiguity or reconstruction burden
-  before assigning a precision category.
-
-Report the recovered contract, section audit, mandatory necessity and
-referential-precision inventories, ranked findings, and overall verdict
-required by the protocol. Keep objective exposition defects separate from
-owner-judgment questions.
-
-## Delta mode
-
-Use delta mode only after a bounded accepted repair. Receive, in document
-order:
-
-- base and changed revision identifiers;
-- the complete list of repair-cluster identifiers the packet claims to cover;
-- each changed region with enough preceding and following context;
-- the cold-reader success criterion for each repair cluster; and
-- explicit non-scope, without the diagnosis, preferred wording, or expected
-  answer.
-
-For each cluster report what the passage now communicates; whether the
-criterion passes, fails, or is untestable; what reconstruction remains; and
-whether the edit introduced ambiguity, process leakage, over-definition,
-displaced motivation, boilerplate, conflict, or out-of-scope change. Do not
-rewrite the passage. A brief repair direction is allowed only to explain a
-failure and must remain separate from the evidence.
-
-End with the exact set of cluster identifiers actually checked and the literal
-line `Delta verdict: PASS`, `Delta verdict: FAIL`, or `Delta verdict:
-UNTESTABLE`. `PASS` means only that every listed cluster passed its supplied
-criterion in the material read. It says nothing about omitted findings,
-unchanged text, or a prior whole-paper verdict.
-
-If the packet changes the paper promise, structural front matter, section
-order, or reading path, report that delta mode is insufficient and a new
-continuous read is required.
-
-## Report scope
-
-Record mode, exact revision, material actually read, isolation conditions, and
-completion state. Silence is not endorsement; flag counts are not a quality
-score; a possible gap is not a mathematical verdict; and a passed delta does
-not certify unchanged text or replace a failed continuous or editorial
-verdict. A passed editorial review does not certify
-first-encounter readability. State the concrete reader burden or marginal
-reader value before assigning a category or suggesting a repair.
+Do not edit or adjudicate the manuscript, verify proofs or novelty, open cited
+sources, or certify mathematics. A delta verdict covers only supplied clusters;
+an editorial verdict does not certify first-encounter readability. Preserve
+these boundaries when reporting a possible gap or a successful review.

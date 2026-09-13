@@ -57,3 +57,14 @@ writer later adjudicates the content.
     Status: complete | invalid | aborted
     Report:
     Failure and point of discovery, if any:
+
+## Include applicable proof-detail decisions
+
+Before launch, apply the writer skill's `references/owner-proof-decisions.md`
+and freeze the neutral contract on the supervisor side. Do not give the reader the private
+registry. As a narrow extension to the fixed manuscript-issuance messages,
+append `Applicable proof-detail contract: <issued sidecar path>` when needed.
+For a continuous reader, that sidecar contains only entries at already issued
+locators, with no future result or proof hints. For an editorial reader, issue
+the neutral contract with the whole manuscript after readiness. Do not amend
+it in reaction to findings. Record which contract revision the reader received.

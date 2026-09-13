@@ -120,3 +120,12 @@ Write one Markdown report to the recorded destination.  Include:
 
 Do not rewrite passages.  Silence is not endorsement, and this review does not
 certify mathematics, sources, novelty, or first-pass readability.
+
+## Scoped proof-detail contract
+
+Apply the shared `owner-proof-decisions.md` policy required by the reader
+skill. A neutral contract sidecar explicitly issued with the allowed manuscript
+is an additional permitted input. Do not open the private registry. Preserve
+reading observations, but do not classify an applicable approved omission as
+a defect solely for lacking detail. Report a concrete new issue separately,
+with its decision ID. Continuous readers receive no entries for later text.

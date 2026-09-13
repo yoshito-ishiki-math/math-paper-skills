@@ -20,7 +20,10 @@ name. Apply the
 [mathematical paper-writing guide](../../write-research-paper/references/paper-writing.md)
 throughout the review.
 
-## When to run one
+## When this mode is useful
+
+These are selection criteria for an explicitly delegated review, not triggers
+for automatic reviewer creation or another run.
 
 Run this pass on the nearly final integrated revision of:
 
@@ -262,6 +265,18 @@ Apply accepted findings as one bounded revision.  Ordinary deletions,
 compressions, renamings, and local precision replacements then receive fresh
 delta regression. If the edits change the paper promise, structural front
 matter, section order, or reading path, run a new continuous review instead.
-Substantial replacement prose, new remarks, or new qualifications require
-another skeptical-editor pass; a clean deletion or exact local replacement
-does not.
+Substantial replacement prose, new remarks, or new qualifications can
+invalidate the previous editorial verdict. Establishing a new independent
+verdict requires another explicitly authorized run; otherwise report the
+current writer-side regression and the old verdict's limits. A clean deletion
+or exact local replacement does not itself require another editorial pass.
+
+## Approved proof-detail contract
+
+Apply the shared
+[author proof-detail policy](../../write-research-paper/references/owner-proof-decisions.md).
+The explicitly issued neutral contract is permitted audience/detail context;
+the underlying decision registry remains withheld. Continuous review reveals
+only entries for already issued text. Treat applicable omissions as accepted
+brevity rather than repeating a demand for expansion. Preserve observations
+and report any distinct new issue with the decision ID and exact reason.

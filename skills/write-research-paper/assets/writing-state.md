@@ -30,6 +30,12 @@ Main-text/appendix and length/detail boundary:
 |---|---|---|---|
 | | | | |
 
+Durable proof-detail registry and applicable decision IDs:
+
+Keep the actual approvals in the paper's durable record, following the writer
+skill's `references/owner-proof-decisions.md` policy, not only in this temporary
+state.
+
 ## Open owner batch
 
 Include only unresolved story, voice, scope, retention, or terminology choices.

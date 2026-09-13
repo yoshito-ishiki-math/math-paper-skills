@@ -1,6 +1,12 @@
 # Mathematics paper skills
 
-Two paired, portable agent skills for owner-directed mathematics-paper writing
+
+This is a public derivative of [Haruhisa Enomoto's math-paper-skills](https://github.com/haruhisa-enomoto/math-paper-skills).
+The original MIT license and attribution are retained. The added workflows are
+portable extracts; personal research records, author profiles, source corpora,
+and private development history are not included. See [PUBLIC-RELEASE.md](PUBLIC-RELEASE.md).
+
+Paired, portable agent skills for owner-directed mathematics-paper writing
 and independent exposition review:
 
 - `write-research-paper` drafts and revises a live LaTeX manuscript, supervises
@@ -51,6 +57,18 @@ Invocation syntax is host-specific. In Codex, use `$write-research-paper` or
 `/read-research-paper`. A host may also select them from their descriptions.
 Start a new session or use the host's skill-refresh mechanism if an update does
 not appear immediately.
+
+## Optional paragraph IDs and private corpus tools
+
+This distribution also includes `skills/latex-paragraph-ids`. Link that directory
+alongside the paired skills when using paragraph IDs. It provides a standalone
+LaTeX package and read-only identifier helpers; it never tags existing papers
+without an explicit request.
+
+The writer includes optional corpus tools with explicit private input paths.
+See its `references/corpus-method.md`. No personal profile, corpus data, or
+source quotations are installed. Configure author preferences in the host
+project's private profile rather than editing this public package.
 
 ## Update
 

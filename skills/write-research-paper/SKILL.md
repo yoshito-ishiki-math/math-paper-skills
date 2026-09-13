@@ -1,113 +1,89 @@
 ---
 name: write-research-paper
-description: Draft a new owner-directed mathematics paper, review and revise a whole manuscript or named section, make a bounded exposition repair, or integrate new claims into a live LaTeX paper using intent alignment, fresh reading, skeptical editorial review when warranted, regression, and host-project validation. Use for live mathematics-paper writing or exposition revision; do not use for proof audits, literature research alone, workflow discussion without edit authority, or independent review without revision authority.
+description: Draft or revise an owner-directed mathematics manuscript, including direct exposition review and repair. Use for manuscript writing or revision, not standalone proof audits or literature research. Independent review requires explicit delegation.
 ---
 
 # Write a research paper
 
-Act as the manuscript writer and review supervisor. Preserve the owner's
-positive decisions, distinguish review evidence from edit authority, and carry
-authorized work through the validation required by the host project.
+Complete the authorized manuscript work while preserving the owner's mathematical
+scope, authorial voice, and explicit decisions. Ordinary work stays with one
+writer. Review evidence, edit authority, mathematical correctness, and build
+health remain separate.
 
-## Load the portable method
+## Establish scope and load the relevant guidance
 
-Before editing, read completely:
+Identify the manuscript, current revision, requested deliverable, edit authority,
+and existing work to preserve from the conversation and local records. A review
+request alone does not authorize manuscript edits. Resolve routine choices from
+context; ask only when a missing owner decision materially affects the work.
+Continue independent in-scope work while that decision is pending.
 
-1. [mathematical paper writing](references/paper-writing.md); and
-2. [the writer/supervisor workflow](references/workflow.md).
+- Read the host instructions and the paper's current records and local overlay.
+- Before substantive manuscript drafting, revision, or exposition review, read
+  the complete [author profile](references/author-style.md) and
+  [paper-writing guide](references/paper-writing.md). Reuse them within the
+  session unless they change. An exact mechanical correction needs the local
+  context and applicable rules, not an unrelated whole-paper review.
+- Use [workflow](references/workflow.md) for scope, revision, adjudication, and
+  finish decisions. Read the sections for the current route; independent-review
+  sections apply only to explicit delegation.
+- For optional source-based wording evidence, use [corpus retrieval](references/corpus-method.md)
+  only with an owner-designated private corpus. No corpus or personal wording
+  choices are bundled. Historical usage does not override current directions.
+- Before changing or reviewing proof detail, locate the paper's durable owner
+  decisions and apply [the proof-detail policy](references/owner-proof-decisions.md).
+  Preserve approved omissions and short arguments within their recorded scope.
+  These records belong in private working files, never manuscript prose or
+  submission artifacts, and do not certify mathematical correctness.
 
-Resolve these links relative to this skill directory. Also read the host
-project's instructions and any local paper-writing overlay they identify. A
-local overlay may add authorship, state, tooling, artifact, or publication
-requirements; it does not replace the portable exposition standard.
+For a requested challenging exposition audit, or a concrete quantifier or
+logical-dependency ambiguity in an authorized review, use
+[challenging audit](references/challenging-exposition-audit.md). It prioritizes
+mathematical interfaces over word substitutions and preserves approved brevity.
 
-Locate the manuscript, exact base revision, current writing state if any, and
-unrelated work that must be preserved. Record exact edit authority. A question,
-diagnosis, review request, or workflow discussion grants no manuscript-edit
-authority.
+Use the existing writing state. For a complex task lacking one,
+[writing-state.md](assets/writing-state.md) is an optional starting point;
+do not create duplicate or empty records for a small edit.
 
-For a substantial task, adapt [writing-state.md](assets/writing-state.md) into
-the host project's ordinary temporary or active-state location. Do not create
-a competing state record when one already exists.
+For paragraph-ID setup or edits addressed by an existing paragraph ID, use
+[latex-paragraph-ids](../latex-paragraph-ids/SKILL.md). Preserve existing IDs
+during revisions; do not introduce tags into unrelated manuscript work. For tagged
+manuscripts, an author request for `submit`, `submit --arxiv`, or publication
+also activates that skill’s submission/publication convention: comment out
+showkeys, the paragraphids package loading, every standalone paraid line,
+and package-specific settings in the release version. Compile the release
+without paragraphids.sty; preserve body text and paragraph boundaries.
 
-## Align and route
+## Choose the route
 
-Infer from ordinary owner language the target revision, requested outcome,
-edit scope, content and structural locks, owner-decision boundary, and finish
-state. Inspect the project read-only before asking a question. If one material
-axis remains ambiguous, ask one short question about it; otherwise state the
-inferred contract concisely and proceed.
+**Lightweight, default.** Read enough manuscript context for the requested scope,
+draft or revise, review the affected exposition, repair accepted issues, and
+finish with proportional validation. A whole-paper request covers the whole
+paper; a named-section request does not authorize sibling changes. Report the
+review as writer-side or single-context.
 
-Use the exact pipeline diagrammed in `references/workflow.md` under the 'Route the task' heading. You must read that diagram to determine your steps before making a plan.
+**Heavyweight, explicitly delegated.** Use the independent-review section of
+[workflow](references/workflow.md) and the selected protocol in
+[read-research-paper](../read-research-paper/SKILL.md). Choose continuous,
+editorial, or delta review to answer the owner's question. One authorization
+covers one run unless comparison or iteration was explicitly requested.
+Difficulty, failure, or submission proximity does not authorize another agent.
+The mode-specific direction and launcher templates define frozen inputs,
+isolation, and the permitted neutral proof-detail contract. The writer reads
+the complete returned report and uses [revision-batch.md](assets/revision-batch.md)
+to account for its findings without changing its literal verdict.
 
-Apply the paper-writing guide during drafting. In particular, keep private
-discussion and internal labels out of manuscript prose, state imported results
-precisely, and test every transition, remark, qualification, repeated
-explanation, informal alias, and apparent theorem name for both reader-visible
-benefit and an exact mathematical referent.
+## Finish the requested work
 
-## Supervise independent review
+Carry the authorized work through necessary repairs and the host's applicable
+checks, rather than stopping at the first draft. Match validation to what
+changed; batch independent checks and rerun only affected checks after a
+failure or further edit. Compile and inspect manuscript artifacts when the
+change or host workflow requires it. Do not launch unrelated tests or another
+review simply because the previous checks passed.
 
-Use a fresh isolated context running `read-research-paper`; do not perform the
-reader role in the writer's context. Before supervising a complete review,
-read the paired reader skill's
-[continuous protocol](../read-research-paper/references/first-reader-review.md)
-or [editorial protocol](../read-research-paper/references/skeptical-editor-review.md)
-completely. Copy and fill the appropriate paired assets:
-
-- [first-reader direction](assets/first-reader-direction.md) and
-  [first-reader launcher](assets/first-reader-launcher.md); or
-- [skeptical-editor direction](assets/skeptical-editor-direction.md) and
-  [skeptical-editor launcher](assets/skeptical-editor-launcher.md).
-
-Initialize the reader with the skill and frozen direction before revealing any
-manuscript text. Keep one reader identity throughout a continuous relay. Give
-an editorial reader the complete frozen reading-order copy only after readiness
-confirmation. Withhold drafting history, expected findings, proposed repairs,
-owner discussion, prior reviews, and writer-side diagnostics.
-
-Read each completed report before editing. Cluster findings by common cause
-using [revision-batch.md](assets/revision-batch.md), distinguish objective
-defects from owner-judgment choices, and choose the smallest accepted repair
-that passes the recorded reader-success test. A reader's proposed wording is
-not automatically an accepted repair.
-
-Review closure is a coverage invariant. Before editing, map every ranked
-finding and every separately stated objective burden or actionable inventory
-item to exactly one revision cluster. Give each cluster an explicit decision:
-`implement`, `modify`, `reject`, or `defer`. A rejection requires concrete
-manuscript or audience-contract evidence; a deferral remains open and prevents
-a finished checkpoint unless the owner explicitly resolves or excludes it.
-Preserve each report's literal verdict; do not relabel a failed source review
-after editing. Close its findings only through the fresh regression required by
-the workflow, using a new full review whenever the edit invalidates that gate.
-
-Preserve the reader's observed burden separately from its proposed remedy.
-You may reject a diagnosis or suggested wording, but do not dismiss a recorded
-inference, rereading, backward search, or translation into an exact
-mathematical predicate merely because the intended meaning is recoverable to
-you. Apply the exact-mathematics standard to that evidence and make the
-smallest local repair when ordinary language is standing in for the
-load-bearing predicate or referent.
-
-Every exposition edit requires fresh independent regression unless the owner
-explicitly waives it for that named edit. If the change alters the promise,
-structural front matter, section order, or reading path, run a new continuous
-review instead of delta regression. Substantial replacement prose, new remarks,
-or new qualifications after editorial review require a new editorial pass.
-A delta pass closes only the repair-cluster identifiers named in its packet; it
-does not close omitted findings or certify unchanged text.
-
-This independent-regression requirement explicitly authorizes the fresh reader
-needed to complete an otherwise authorized manuscript edit. If the execution
-environment cannot supply one, report `revision drafted; independent regression
-pending` and leave the work unfinished.
-
-## Finish
-
-Compile or otherwise validate the manuscript as its format requires, run every
-additional host-project gate, inspect the aggregate diff and artifacts, and
-create only the checkpoint authorized or required by the host project. Do not
-manufacture an edit or empty checkpoint when no repair is accepted. Do not
-prepare a submission package, declare a release, or publish externally without
-separate authority.
+Report the delivered scope, actual validation and its limits, any remaining
+owner dependency, and the relevant working-tree state. Preserve evidence
+statuses and current owner locks. Create only checkpoints required by the host
+or requested by the owner. Submission packaging and publication require their
+own authorization.
