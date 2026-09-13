@@ -2,7 +2,7 @@
 
 [English](README.md) | 日本語
 
-[Haruhisa Enomoto氏の math-paper-skills](https://github.com/haruhisa-enomoto/math-paper-skills) を元にした公開フォークです。元のMITライセンスと著作権表示を保持し、追加した執筆・レビュー手順から汎用部分を収録しています。個人の研究記録、著者プロファイル、論文コーパス、私有の開発履歴は含みません。公開範囲は [PUBLIC-RELEASE.md](PUBLIC-RELEASE.md) を参照してください。
+[Haruhisa Enomoto氏の math-paper-skills](https://github.com/haruhisa-enomoto/math-paper-skills) を元にした公開フォークです。元のMITライセンスと著作権表示を保持し、追加した執筆・レビュー手順から汎用部分を収録しています。個人の研究記録、著者を特定するプロファイル情報、論文コーパス、私有の開発履歴は含みません。公開範囲は [PUBLIC-RELEASE.md](PUBLIC-RELEASE.md) を参照してください。
 
 ## 含まれるskills
 
@@ -74,6 +74,12 @@ Codexでは `$write-research-paper`、Claude Codeでは `/write-research-paper` 
 公開版の [`author-style.md`](skills/write-research-paper/references/author-style.md) は、個人の好みを含まない設定案内です。実際のプロファイルは私有のskill拡張または共通ファイルで管理し、公開リポジトリへコミットしないでください。ハーネス側では、例えば無視対象の `docs/STYLE.local.md` から共通ファイルを指定できます。独立した読者には、許可された固定版のスタイル指定だけを渡します。
 
 著者プロファイルを指定しない場合でも、明示的な指示、原稿の既存の慣習、投稿先の要件と共通の執筆指針に沿って作業できます。
+
+### 任意採用の具体例
+
+[著者スタイルの例](examples/author-style.md)には、実際の運用プロファイルから個人を特定する情報や論文固有の参照を除いた、具体的な方針を収録しています。句読法、`give`・`suppose` などの語法、定理と証明の説明、量化と依存関係、記号、文献・相互参照、TeXソース整形などが対象です。
+
+**skillの導入だけでは自動適用されません。** 数学英語の普遍的な正誤基準ではなく、一つのスタイルの見本です。必要な規則を私有の共通プロファイルへコピーして調整し、利用するプロファイルとして明示的に指定してください。用例は一般的な記号・TeX設定で、原稿からの引用は含みません。
 
 ## ハーネス・Kichoとの組み合わせ
 

@@ -16,10 +16,12 @@ private development commits and branches were not imported.
 
 ## Excluded material
 
-Personal author profiles, manuscript corpora and quotations, derived vocabulary
+Identifying author-profile details, manuscript corpora and quotations, derived vocabulary
 data, real research records, machine-specific paths, credentials, private logs,
-and local development history are excluded. Examples are upstream fictional
-fixtures or newly written synthetic tests. Public account identity remains
+and local development history are excluded. Research examples are upstream fictional
+fixtures or newly written synthetic tests. `examples/author-style.md` is a
+separately authorized, sanitized extract of concrete style preferences, with
+generic notation and no manuscript quotations. It is optional, not a default. Public account identity remains
 visible through GitHub hosting and noreply commit metadata.
 
 ## Customization
@@ -43,3 +45,10 @@ services require their own project-specific setup and validation.
 The release file scan found no configured personal identifiers, local home paths,
 private-key blocks, or recognized access-token patterns. This scan is bounded
 by its patterns; it is not a guarantee about arbitrary future additions.
+
+## Optional style example
+
+The example was added after the initial portable release. Private profile paths,
+project-specific references, source evidence, and individual decisions remain
+excluded. Adopting its rules requires an explicit profile choice; the shared
+skill entry point remains neutral.

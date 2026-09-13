@@ -4,7 +4,7 @@ English | [日本語](README.ja.md)
 
 This is a public derivative of [Haruhisa Enomoto's math-paper-skills](https://github.com/haruhisa-enomoto/math-paper-skills).
 The original MIT license and attribution are retained. The added workflows are
-portable extracts; personal research records, author profiles, source corpora,
+portable extracts; private research records, identifying author-profile details, source corpora,
 and private development history are not included. See [PUBLIC-RELEASE.md](PUBLIC-RELEASE.md).
 
 Paired, portable agent skills for owner-directed mathematics-paper writing
@@ -67,9 +67,18 @@ LaTeX package and read-only identifier helpers; it never tags existing papers
 without an explicit request.
 
 The writer includes optional corpus tools with explicit private input paths.
-See its `references/corpus-method.md`. No personal profile, corpus data, or
+See its `references/corpus-method.md`. No private profile, corpus data, or
 source quotations are installed. Configure author preferences in the host
 project's private profile rather than editing this public package.
+
+## Optional author-style example
+
+[Example author-style profile](examples/author-style.md) contains concrete
+preferences for prose, proof exposition, notation, citations, hyperlinks, and
+TeX source layout, adapted from a working profile with identifying details
+removed. It is illustrative and is **not applied automatically**. Copy and adapt
+the desired rules into your private shared profile, then designate that profile
+in your host project. The skill's neutral configuration guide remains the default.
 
 ## Update
 

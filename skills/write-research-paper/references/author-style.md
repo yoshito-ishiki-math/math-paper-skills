@@ -1,6 +1,6 @@
 # Author style configuration
 
-This public package contains no personal author profile or source-paper corpus.
+This entry point contains no personal author profile or source-paper corpus.
 Use explicit current directions, the manuscript's established conventions, and
 venue requirements. Do not infer personal preferences from this template.
 
@@ -26,3 +26,7 @@ bibliography, or disclosure wording on another author.
 Before requesting more proof detail, apply the manuscript's scoped decisions
 under [the proof-detail policy](owner-proof-decisions.md). These decisions do not
 certify correctness and are not manuscript prose.
+
+An [optional concrete example](../../../examples/author-style.md) is available
+for explicit adoption and customization. Do not load or apply that example as
+a default, and do not infer that its preferences belong to the current author.
