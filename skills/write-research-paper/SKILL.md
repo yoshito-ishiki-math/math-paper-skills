@@ -51,7 +51,7 @@ during revisions; do not introduce tags into unrelated manuscript work. For tagg
 manuscripts, an author request for `submit`, `submit --arxiv`, or publication
 also activates that skill’s submission/publication convention: comment out
 showkeys, the paragraphids package loading, every standalone paraid line,
-and package-specific settings in the release version. Compile the release
+all paranote calls (including continuation lines), and package-specific settings in the release version. Compile the release
 without paragraphids.sty; preserve body text and paragraph boundaries.
 
 ## Choose the route

@@ -19,7 +19,7 @@ customizations, then replace deliberately; do not silently upgrade projects.
 
 Add `\usepackage{paragraphids}` to show IDs; `[hide]` hides them during
 ordinary drafting. IDs always use the physical left page margin, including
-even pages and two-column pages; check collisions for aligned column starts. There is no showkeys dependency or auto option in v0.3.
+even pages and two-column pages; check collisions for aligned column starts. There is no showkeys dependency or auto option in v0.4.
 Place each literal `\paraid{p-xxxxxxxxxxxx}` on its own line immediately before
 the paragraph text, with no blank line between marker and text. Put theorem,
 proof, and item commands on separate preceding lines. Generate IDs with
@@ -89,3 +89,24 @@ and layout. A successful compile alone establishes neither. Comment removal
 is expected to preserve paragraph layout but must be checked for the actual
 manuscript. Keep validation lightweight and batch it with existing release checks.
 This convention does not authorize uploading or publishing by itself.
+
+## Red editorial notes
+
+Use `\paranote[vertical offset]{number}{comment}` on its own source line at the
+relevant paragraph. The optional offset defaults to 8pt, below the paragraph ID.
+The number is supplied explicitly to preserve the author's issue numbering.
+Notes wrap in the physical left margin in red, share the package show/hide
+switch, and do not automatically avoid collisions. Inspect annotated pages and
+adjust offsets or shorten notes where needed; do not change body layout merely
+to fit notes. Width and font are configurable with paragraphnotewidth and
+paragraphnotefont. Japanese notes require the manuscript's Japanese-capable
+engine/font setup. Notes may be written in the original manuscript when
+annotating is authorized, rather than requiring a separate PDF-only workflow.
+
+For every submission or publication version, comment out ALL paranote calls
+and their continuation lines, plus their package-specific settings, along with
+the package and paraid lines. Keep body text outside comment lines. Check all
+included source files and inspect the final PDF to ensure no red editorial note
+or issue number survives. Hiding alone does not satisfy the release convention.
+The working source can retain notes in comments; never leave active note calls
+when the package loading is commented out.

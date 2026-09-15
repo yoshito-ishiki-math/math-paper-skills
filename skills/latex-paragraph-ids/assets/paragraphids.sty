@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[2020/10/01]
-\ProvidesPackage{paragraphids}[2026/09/13 v0.3 Stable paragraph review identifiers]
+\ProvidesPackage{paragraphids}[2026/09/15 v0.4 Stable paragraph review identifiers]
 
 % Display is independent of showkeys. Default: show.
 \newif\ifparagraphids@show
@@ -25,6 +25,27 @@
     \renewcommand*\marginfont{\paragraphidfont}%
     \marginnote{\mbox{#1}}%
   \endgroup
+}
+
+
+% Numbered editorial notes. Keep each call on its own source line.
+\RequirePackage{color}
+\newlength\paragraphnotewidth
+\setlength\paragraphnotewidth{25mm}
+\newcommand*\paragraphnotefont{\normalfont\fontsize{8}{9.5}\selectfont}
+\NewDocumentCommand\paranote{O{8pt} m +m}{%
+  \ifparagraphids@show
+    \begingroup
+      \let\paragraphids@savedtest\@mn@margintest
+      \def\@mn@margintest{\paragraphids@savedtest\@tempswatrue}%
+      \reversemarginpar
+      \setlength\marginparwidth{\paragraphnotewidth}%
+      \renewcommand*\marginfont{\paragraphnotefont\color{red}}%
+      \renewcommand*\raggedleftmarginnote{\raggedright}%
+      \marginnote{\textbf{#2.}\enspace #3}[#1]%
+    \endgroup
+  \fi
+  \ignorespaces
 }
 
 \ExplSyntaxOn
